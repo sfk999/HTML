@@ -1,3 +1,26 @@
 p {
     color: blue
 }
+
+#clientName_id {
+    background: linear-gradient(90deg, #000 0%, #fff 100%);
+}
+
+#table1 {
+border: 15px solid;
+border-image: url(/assets/images/border-image.png) 30 / 15px / 0px stretch;
+box-shadow: 5px 5px 10px 1px #000;
+}
+
+#h1_id {
+letter-spacing: 5px;
+}
+
+.test1{
+text-align: center;
+tab-size: 7;
+}
+
+.test2{
+text-decoration: underline dashed #fff;
+}

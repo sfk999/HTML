@@ -3,11 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title>Form</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+<h1 class="test1 test2">Forms Page</h1>
     <form action="/handler.php" method="post">
-        <label for="clientName">Ваше имя</label>
-        <input type="text" id="clientName" name="clientName"/>
+        <label for="clientName_id">Ваше имя</label>
+        <input type="text" id="clientName_id" name="clientName"/>
         <button type="submit">Отправить заявку</button>
     </form>
     <hr/>
@@ -20,13 +22,13 @@
     </form>
     <hr/>
     <form action="/handler.php" method="post">
-        <p><label for="checkbox">Checkbox</label>
-            <input type="checkbox" checked id="checkbox" name="checkbox" /></p>
+        <p><label for="checkbox_id">Checkbox</label>
+            <input type="checkbox" checked id="checkbox_id" name="checkbox" /></p>
     </form>
     <hr/>
     <form>
-        <label for="clientName">Radiobutton</label>
-        <input type="radio" checked value="1" name="Radio">1
+        <label for="radio_id">Radiobutton</label>
+        <input type="radio" checked value="1" name="Radio" id="radio_id">1
         <input type="radio" value="1" name="Radio">2
         <input type="radio" value="1" name="Radio">3
     </form>
@@ -53,9 +55,10 @@
             </select>
     </form>
     <hr/>
-    <form>
-        <button type="submit" name="button1" id="button_id">BUTTON</button>
+    <form action="button.php" method="post">
+        <button type="submit" name="button1" id="button_id">Кнопка</button>
     </form>
     <hr/>
+    <a target="_blank" href="table.html#table1">Ссылка на другую страницу</a>
 </body>
 </html>
