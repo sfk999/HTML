@@ -22,16 +22,32 @@
     </form>
     <hr/>
     <form action="/handler.php" method="post">
-        <p><label for="checkbox_id">Checkbox</label>
-            <input type="checkbox" checked id="checkbox_id" name="checkbox" /></p>
+        <p>
+            <label for="checkbox_id">Checkbox</label>
+            <input type="checkbox" checked id="checkbox_id" name="checkbox" />
+        </p>
+        <p>
+            <input type="submit" value="Отправить">
+        </p>
     </form>
     <hr/>
-    <form>
-        <label for="radio_id">Radiobutton</label>
-        <input type="radio" checked value="1" name="Radio" id="radio_id">1
-        <input type="radio" value="1" name="Radio">2
-        <input type="radio" value="1" name="Radio">3
-    </form>
+<form action="select1.php" method="post">
+    <p>Please select your preferred contact method:</p>
+    <div>
+        <input type="radio" id="contactChoice1"
+               name="contact" value="email">
+        <label for="contactChoice1">Email</label>
+        <input type="radio" id="contactChoice2"
+               name="contact" value="phone">
+        <label for="contactChoice2">Phone</label>
+        <input type="radio" id="contactChoice3"
+               name="contact" value="mail">
+        <label for="contactChoice3">Mail</label>
+    </div>
+    <p>
+        <button type="submit">Submit</button>
+    </p>
+</form>
     <hr/>
     <form action="select1.php" method="post">
         <p>
@@ -42,6 +58,9 @@
                 <option>Категория2</option>
                 <option>Категория3</option>
             </select>
+        <p>
+            <input type="submit" value="Отправить">
+        </p>
     </form>
     <hr/>
     <form action="select2.php" method="post">
@@ -53,6 +72,9 @@
             <option>Категория2</option>
             <option>Категория3</option>
             </select>
+        <p>
+            <input type="submit" value="Отправить">
+        </p>
     </form>
     <hr/>
     <form action="button.php" method="post">
